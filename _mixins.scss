@@ -1,0 +1,125 @@
+
+/**
+ * IIS Mixins
+ * Version 1.0
+ */
+
+
+/**
+ * Print CSS background url for retina image
+ * @param  string $image  Path to image
+ * @param  string $width  Image width
+ * @param  string $height Image height
+ * @return string         CSS for retina image
+ */
+@mixin make-retina($image, $width, $height) {
+	$image: replace-to-retina($image);
+
+	background: url($image);
+	background-size: $width $height;
+}
+
+
+/**
+ * Simple string search and replace
+ * @param  string $string
+ * @param  string $search
+ * @param  string $replace
+ * @return string $string
+ */
+@function str-replace($string, $search, $replace: '') {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+
+/**
+ * Add '@2x' at the end of a filename
+ * @param  string $string
+ * @return string $string
+ */
+@function replace-to-retina($string) {
+	$string: str-replace($string, '.png', '@2x.png');
+	$string: str-replace($string, '.jpg', '@2x.jpg');
+	$string: str-replace($string, '.gif', '@2x.gif');
+
+	@return $string;
+}
+
+
+/**
+ * Print CSS for anchors with a dotted line
+ * Will be deprecated during 2018.
+ */
+@mixin dotted-anchor-underline() {
+	a {
+		border-bottom: 1px dotted $anchor-color;
+
+		&:hover {
+			border-bottom: 1px solid $anchor-color-hover;
+		}
+	}
+}
+
+
+/**
+ * Print CSS for mobile menu burger
+ */
+@mixin burger($width: 30px, $height: 5px, $gutter: 3px, $color: $black, $border-radius: 0, $transition-duration: .3s) {
+	$burger-height: $height !global;
+	$burger-gutter: $gutter !global;
+
+	position: relative;
+	margin-top: $height + $gutter;
+	margin-bottom: $height + $gutter;
+
+	&,
+	&::before,
+	&::after {
+		display: block;
+		width: $width;
+		height: $height;
+		transition-duration: $transition-duration;
+		transition-property: background-color, transform;
+		background-color: $color;
+
+		@if $border-radius != 0 {
+			border-radius: $border-radius;
+		}
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+	}
+
+	&::before {
+		top: -($height + $gutter);
+	}
+
+	&::after {
+		top: $height + $gutter;
+	}
+}
+
+
+/**
+ * Print CSS for mobile menu burger/cross-animation
+ */
+@mixin burger-to-cross {
+	background-color: transparent;
+
+	&::before {
+		transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+	}
+
+	&::after {
+		transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+	}
+}

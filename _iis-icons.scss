@@ -1,0 +1,465 @@
+
+/**
+ * IIS Icons
+ * Version 1.0
+ * 
+ * Dependences
+ * - _iis-icon-variables.scss
+ */
+
+$iis-font-path: 'https://static.iis.se/iis-icons' !default;
+
+@font-face {
+	font-family: 'iis-icons';
+	src: url('#{$iis-font-path}/iis-icons.ttf?k64cid') format('truetype'),
+         url('#{$iis-font-path}/iis-icons.woff?k64cid') format('woff'),
+         url('#{$iis-font-path}/iis-icons.svg?k64cid#iis-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="iis-icons"]::before,
+[class*=" iis-icons"]::before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	// scss-lint:disable ImportantRule
+	font-family: 'iis-icons' !important;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1.5;
+	text-transform: none;
+	speak: none;
+}
+
+
+.iis-icons-agreement {
+	&::before {
+		content: $iis-icons-agreement;
+	}
+}
+
+.iis-icons-arrow-down {
+	&::before {
+		content: $iis-icons-arrow-down;
+	}
+}
+
+.iis-icons-arrow-left {
+	&::before {
+		content: $iis-icons-arrow-left;
+	}
+}
+
+.iis-icons-arrow-right {
+	&::before {
+		content: $iis-icons-arrow-right;
+	}
+}
+
+.iis-icons-arrow-up {
+	&::before {
+		content: $iis-icons-arrow-up;
+	}
+}
+
+.iis-icons-arrow {
+	&::before {
+		content: $iis-icons-arrow;
+	}
+}
+
+.iis-icons-big-community {
+	&::before {
+		content: $iis-icons-big-community;
+	}
+}
+
+.iis-icons-big-laptop {
+	&::before {
+		content: $iis-icons-big-laptop;
+	}
+}
+
+.iis-icons-bolt {
+	&::before {
+		content: $iis-icons-bolt;
+	}
+}
+
+.iis-icons-calendar {
+	&::before {
+		content: $iis-icons-calendar;
+	}
+}
+
+.iis-icons-cc-attribution {
+	&::before {
+		content: $iis-icons-cc-attribution;
+	}
+}
+
+.iis-icons-cc-no-dervis {
+	&::before {
+		content: $iis-icons-cc-no-dervis;
+	}
+}
+
+.iis-icons-cc-non-commercial {
+	&::before {
+		content: $iis-icons-cc-non-commercial;
+	}
+}
+
+.iis-icons-checkbox {
+	&::before {
+		content: $iis-icons-checkbox;
+	}
+}
+
+.iis-icons-clock {
+	&::before {
+		content: $iis-icons-clock;
+	}
+}
+
+.iis-icons-cloud-services {
+	&::before {
+		content: $iis-icons-cloud-services;
+	}
+}
+
+.iis-icons-cloud {
+	&::before {
+		content: $iis-icons-cloud;
+	}
+}
+
+.iis-icons-connect-service {
+	&::before {
+		content: $iis-icons-connect-service;
+	}
+}
+
+.iis-icons-database {
+	&::before {
+		content: $iis-icons-database;
+	}
+}
+
+.iis-icons-desktop {
+	&::before {
+		content: $iis-icons-desktop;
+	}
+}
+
+.iis-icons-document {
+	&::before {
+		content: $iis-icons-document;
+	}
+}
+
+.iis-icons-double-arrow-down {
+	&::before {
+		content: $iis-icons-double-arrow-down;
+	}
+}
+
+.iis-icons-double-arrow-left {
+	&::before {
+		content: $iis-icons-double-arrow-left;
+	}
+}
+
+.iis-icons-double-arrow-right {
+	&::before {
+		content: $iis-icons-double-arrow-right;
+	}
+}
+
+.iis-icons-double-arrow-up {
+	&::before {
+		content: $iis-icons-double-arrow-up;
+	}
+}
+
+.iis-icons-e-sevice {
+	&::before {
+		content: $iis-icons-e-sevice;
+	}
+}
+
+.iis-icons-exclamation-triangle {
+	&::before {
+		content: $iis-icons-exclamation-triangle;
+	}
+}
+
+.iis-icons-external-link {
+	&::before {
+		content: $iis-icons-external-link;
+	}
+}
+
+.iis-icons-facebook {
+	&::before {
+		content: $iis-icons-facebook;
+	}
+}
+
+.iis-icons-federation {
+	&::before {
+		content: $iis-icons-federation;
+	}
+}
+
+.iis-icons-get-technical {
+	&::before {
+		content: $iis-icons-get-technical;
+	}
+}
+
+.iis-icons-go-on {
+	&::before {
+		content: $iis-icons-go-on;
+	}
+}
+
+.iis-icons-heart {
+	&::before {
+		content: $iis-icons-heart;
+	}
+}
+
+.iis-icons-home {
+	&::before {
+		content: $iis-icons-home;
+	}
+}
+
+.iis-icons-id {
+	&::before {
+		content: $iis-icons-id;
+	}
+}
+
+.iis-icons-idea {
+	&::before {
+		content: $iis-icons-idea;
+	}
+}
+
+.iis-icons-idp {
+	&::before {
+		content: $iis-icons-idp;
+	}
+}
+
+.iis-icons-info {
+	&::before {
+		content: $iis-icons-info;
+	}
+}
+
+.iis-icons-instagram {
+	&::before {
+		content: $iis-icons-instagram;
+	}
+}
+
+.iis-icons-key {
+	&::before {
+		content: $iis-icons-key;
+	}
+}
+
+.iis-icons-laptop {
+	&::before {
+		content: $iis-icons-laptop;
+	}
+}
+
+.iis-icons-letter {
+	&::before {
+		content: $iis-icons-letter;
+	}
+}
+
+.iis-icons-loading {
+	&::before {
+		content: $iis-icons-loading;
+	}
+}
+
+.iis-icons-logo {
+	&::before {
+		content: $iis-icons-logo;
+	}
+}
+
+.iis-icons-menu {
+	&::before {
+		content: $iis-icons-menu;
+	}
+}
+
+.iis-icons-metadata {
+	&::before {
+		content: $iis-icons-metadata;
+	}
+}
+
+.iis-icons-minus {
+	&::before {
+		content: $iis-icons-minus;
+	}
+}
+
+.iis-icons-mobile {
+	&::before {
+		content: $iis-icons-mobile;
+	}
+}
+
+.iis-icons-office {
+	&::before {
+		content: $iis-icons-office;
+	}
+}
+
+.iis-icons-one-service {
+	&::before {
+		content: $iis-icons-one-service;
+	}
+}
+
+.iis-icons-open-menu {
+	&::before {
+		content: $iis-icons-open-menu;
+	}
+}
+
+.iis-icons-pencil {
+	&::before {
+		content: $iis-icons-pencil;
+	}
+}
+
+.iis-icons-pin {
+	&::before {
+		content: $iis-icons-pin;
+	}
+}
+
+.iis-icons-plus {
+	&::before {
+		content: $iis-icons-plus;
+	}
+}
+
+.iis-icons-portal {
+	&::before {
+		content: $iis-icons-portal;
+	}
+}
+
+.iis-icons-questionmark-circle {
+	&::before {
+		content: $iis-icons-questionmark-circle;
+	}
+}
+
+.iis-icons-read-more {
+	&::before {
+		content: $iis-icons-read-more;
+	}
+}
+
+.iis-icons-search {
+	&::before {
+		content: $iis-icons-search;
+	}
+}
+
+.iis-icons-sector {
+	&::before {
+		content: $iis-icons-sector;
+	}
+}
+
+.iis-icons-server {
+	&::before {
+		content: $iis-icons-server;
+	}
+}
+
+.iis-icons-service {
+	&::before {
+		content: $iis-icons-service;
+	}
+}
+
+.iis-icons-share {
+	&::before {
+		content: $iis-icons-share;
+	}
+}
+
+.iis-icons-sign-up {
+	&::before {
+		content: $iis-icons-sign-up;
+	}
+}
+
+.iis-icons-small-communities {
+	&::before {
+		content: $iis-icons-small-communities;
+	}
+}
+
+.iis-icons-sp {
+	&::before {
+		content: $iis-icons-sp;
+	}
+}
+
+.iis-icons-testimonial {
+	&::before {
+		content: $iis-icons-testimonial;
+	}
+}
+
+.iis-icons-text-bubble {
+	&::before {
+		content: $iis-icons-text-bubble;
+	}
+}
+
+.iis-icons-touchpad {
+	&::before {
+		content: $iis-icons-touchpad;
+	}
+}
+
+.iis-icons-twitter {
+	&::before {
+		content: $iis-icons-twitter;
+	}
+}
+
+.iis-icons-user-label {
+	&::before {
+		content: $iis-icons-user-label;
+	}
+}
+
+.iis-icons-user-org {
+	&::before {
+		content: $iis-icons-user-org;
+	}
+}
+
+.iis-icons-user {
+	&::before {
+		content: $iis-icons-user;
+	}
+}

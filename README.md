@@ -1,5 +1,5 @@
-iis-design-libs
-===============
+IIS Design Libraries
+====================
 
 IIS colors, icon fonts and other design stuff common for all IIS sites.
 
